@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Kgs</title>
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/chat.css" rel="stylesheet" type="text/css">
+</head>
+<body class="container">
+    
+    <h1 class="mt-2">Sala de mensajes</h1>
+    
+    <hr>
+    <div class="d-flex flex-row x">
+        <div class="cajaIzq col-auto">
+            <div class="form-material">
+                <input class="form-control mb-2" type="text" id="buscaContacto" placeholder="Buscar Contacto">
+            </div>
+            <ul id="divUsuarios" class="col-auto">
+            
+            </ul>
+        </div>
+        <div class="container-fluid cajaD">
+            <h3 id="tituloSala">sala de Juegos</h3>
+            <div id="cuadroTxt" class="d-flex flex-column overflow-auto" style="background-color: aliceblue;">
+                <ul id="chatBox">
+
+                </ul>
+            </div>
+            <div id="chatAbajo"> 
+                <div class="container-fluid col-auto"> 
+                    <form id="formEnviar">
+                        <div id="envioMensajes" class="d-flex flex-row" >
+                            <input  autocomplete="off" type="text" id="txtMensaje" placeholder="escribe aquí tu mensaje" autofocus>
+                            <button type="submit" id="btnEnviar" class="btn btn-info">=></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script src="./js/libs/jquery-3.6.0.min.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket-chat-jquery.js"></script>
+    <script src="./js/socket-chat.js"></script>
+</body>
+</html>

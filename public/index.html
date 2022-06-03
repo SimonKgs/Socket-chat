@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Kgs</title>
+    <!-- CSS only -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+
+</head>
+<body class="container-fluid ">
+    <h1 class="mt-2">Chat Kgs</h1>
+    <hr>
+
+    <div class="container">
+        <p>
+            Server status:
+            <span id='lblOnline' class="text-success">Online</span>
+            <span id='lblOffline' class="text-danger">Offline</span>
+        </p>
+    </div>
+    <div class="container">
+        <form action="chat.html" class="form-group row">
+                <input type="text" class="mt-2" name="nombre" placeholder="nombre" required>
+                <input type="text" class="mt-2" name="sala" placeholder="sala" required>
+                <button type="submit" class="btn btn-outline-primary mt-2">Entrar al chat</button>
+            
+        </form>
+    </div>
+    <hr>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/socket-index.js"></script>
+</body>
+</html>
